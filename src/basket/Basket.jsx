@@ -41,6 +41,9 @@ export default connect(state => ({
   items: Object.values(state.basket).map(item => ({
     ...item,
     // $FlowFixMe
-    totalPrice: item.quantity * item.price,
+    totalPrice:
+      item.name !== 'Papaye'
+        ? item.quantity * item.price
+        : (Math.trunc(item.quantity / 3) * 2 + item.quantity % 3) * item.price,
   })),
 }))(Basket);
