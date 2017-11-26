@@ -9,6 +9,7 @@ import './App.css';
 import store from './store';
 
 import ItemList from './items/ItemList';
+import Basket from './basket/Basket';
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
           </h1>
         </header>
         <ItemList />
+        <Basket />
       </div>
     </Provider>
   );

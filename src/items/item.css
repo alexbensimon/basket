@@ -1,0 +1,11 @@
+.item-comp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-comp-add-button {
+  font-size: 15px;
+  margin-right: 20px;
+}

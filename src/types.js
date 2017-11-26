@@ -1,8 +1,13 @@
 // @flow
+/* eslint-disable no-undef */
 
-// eslint-disable-next-line no-undef
-export type Item = {
+export type ItemType = {
   id: number,
   name: string,
   price: number,
+};
+
+export type BasketItemType = {
+  ...ItemType,
+  quantity: number,
 };
