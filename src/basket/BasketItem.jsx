@@ -13,7 +13,7 @@ export default function BasketItem(props: Props) {
   return (
     <div>
       <h3>
-        {props.quantity} {props.name} ({props.price}): {props.totalPrice.toFixed(2)}
+        {props.quantity} * {props.name} ({props.price}): {props.totalPrice.toFixed(2)}
       </h3>
     </div>
   );
