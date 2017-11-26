@@ -1,21 +1,26 @@
-import React, { Component } from 'react';
+// @flow
+/* eslint-disable react/jsx-filename-extension */
+
+import React from 'react';
+
 import logo from './logo.svg';
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
+import ItemList from './ItemList';
 
-export default App;
+export default function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <h1 className="App-title">
+          Welcome to Basket{' '}
+          <span role="img" aria-label="shopping-cart-emoji">
+            🛒
+          </span>
+        </h1>
+      </header>
+      <ItemList />
+    </div>
+  );
+}
