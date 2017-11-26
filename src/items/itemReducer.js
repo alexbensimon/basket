@@ -1,10 +1,8 @@
 // @flow
 
-import React from 'react';
+import type { Item } from '../types';
 
-import Item from './Item';
-
-const data = [
+const initialState = [
   {
     id: 0,
     name: 'Pomme',
@@ -27,6 +25,12 @@ const data = [
   },
 ];
 
-export default function ItemList() {
-  return data.map(item => <Item name={item.name} price={item.price} key={item.id} />);
+export default function shoppingReducer(
+  state: Item[] = initialState,
+  action: { type: string, payload: any },
+) {
+  switch (action.type) {
+    default:
+      return state;
+  }
 }

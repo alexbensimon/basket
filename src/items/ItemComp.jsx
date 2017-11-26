@@ -7,7 +7,7 @@ type Props = {
   price: number,
 };
 
-export default function Item(props: Props) {
+export default function ItemComp(props: Props) {
   return (
     <div>
       <h1>
