@@ -1,6 +1,6 @@
 // @flow
 
-import type { Item } from '../types';
+import type { ItemType } from '../types';
 
 const initialState = [
   {
@@ -26,7 +26,7 @@ const initialState = [
 ];
 
 export default function shoppingReducer(
-  state: Item[] = initialState,
+  state: ItemType[] = initialState,
   action: { type: string, payload: any },
 ) {
   switch (action.type) {
